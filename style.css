@@ -9,7 +9,15 @@
   transition: all 0.2s;
   overflow-y: auto;
   border: 5px solid #FFF;
+  border-radius: 25px;
+  opacity: 0.64;
+  background-color: #111;
 }
+
+.navbar_left:hover {
+  opacity: 1;
+}
+
 .section_right {
   display: block;
   position: absolute;
@@ -21,6 +29,13 @@
   transition: all 0.2s;
   overflow-y: auto;
   border: 5px solid #FFF;
+  border-radius: 25px;
+  opacity: 0.64;
+  background-color: #111;
+}
+
+.section_right:hover {
+  opacity: 1;
 }
 
 .section_middle {
@@ -35,6 +50,13 @@
   overflow-y: auto;
   overflow-x: hidden;
   border: 5px solid #FFF;
+  border-radius: 25px;
+  opacity: 0.64;
+  background-color: #111;
+}
+
+.section_middle:hover {
+  opacity: 1;
 }
 
 .recommend {
@@ -44,15 +66,18 @@
   margin-left: auto;
   margin-right: auto;
   transition: all 0.2s;
-  opacity: 0.5;
-  border: 5px solid #FFF;
+  border: 5px solid #666;
+  border-radius: 25px;
   text-align: center;
   text-decoration: none;
-  color: #FFF;
+  color: #666;
+  background-color: #999;
 }
 
 .recommend:hover {
-  opacity: 1;
+  color: #000;
+  border-color: #AAA;
+  background-color: #FFF;
 }
 
 .recommend_img {
@@ -61,7 +86,8 @@
   margin: 10px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid #FFF;
+  border: 5px solid #666;
+  border-radius: 25px;
 }
 
 .section_ads {
@@ -95,27 +121,32 @@
   display: block;
   position: relative;
   float: left;
-  width: 320px;
+  width: calc(100vw / 10);
+  height: calc(100% / 5);
   margin: 35px;
-  border: 5px solid #FFF;
+  border: 5px solid #666;
+  border-radius: 25px;
   transition: all 0.2s;
-  opacity: 0.5;
   text-align: center;
   text-decoration: none;
-  color: #FFF;
+  color: #666;
+  background-color: #999;
 }
 
 .for_sale_item:hover {
-  opacity: 1;
+  color:#000;
+  background-color: #FFF;
+  border: 5px solid #AAA;
 }
 
 .for_sale_img {
   display: block;
-  height: 160px;
+  height: 3vw;
   margin: 10px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid #FFF;
+  border: 5px solid #777;
+  border-radius: 25px;
 }
 
 .ads {
@@ -137,28 +168,43 @@ footer {
 
 }
 
+h3 {
+  font-size: calc(100vw / 80);
+}
+
 h1 {
   position: absolute;
   width: 100%;
   top: -26px;
+  margin-top: 24px;
   text-align: center;
   background-color: #FFF;
   color: #000;
   font-size: 28px;
 }
 
+hr {
+  border: 5px solid #AAA;
+}
+
 .navlink {
   display: block;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  color:#AAA;
-  padding: 24px 12px;
+  color:#666;
+  padding: 12px 12px;
   transition: all 0.2s;
   text-decoration:none;
+  border: 5px solid #666;
+  border-radius: 25px;
+  background-color: #999;
 }
 
 .navlink:hover {
-  color:#FFF;
+  color:#000;
+  border: 5px solid #AAA;
+  background-color: #FFF;
 }
 
 .searchbox {
@@ -171,6 +217,12 @@ h1 {
   border-width: 5px;
   border-style: solid; 
   border-color: #FFFFFF;
+  border-radius: 25px;
+  opacity: 0.64;
+}
+
+.searchbox:hover {
+  opacity: 1;
 }
 
 .logo {
@@ -178,6 +230,12 @@ h1 {
   width: 200px;
   left: 236px;
   top: 40px;
+  transition: all 0.2s;
+  opacity: 0.64;
+}
+
+.logo:hover {
+  opacity: 1;
 }
 
 html {
